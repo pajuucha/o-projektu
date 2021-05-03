@@ -7,13 +7,24 @@ html {
   box-sizing: inherit;
 }
 
+/* barva žlutá = fce73e
+barva červená = e73d4a
+barva zelená = 067d85
+barva fialová = 81399f */
+
 body {
   margin: 0;
   padding: 0;
 }
 
-h1 {
-  font-family: 'Luckiest Guy';
-  color: rgb(57, 7, 77);
-  font-size: 4rem;
+.main-page {
+  margin: 0 auto;
+  width: 750px;
+  height: 900px;
+}
+
+p {
+  font-family: 'Trebuchet MS', 'sans-serif';
+  text-align: center;
+  font-size: 1rem;
 }
