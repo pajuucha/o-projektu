@@ -7,20 +7,17 @@ html {
   box-sizing: inherit;
 }
 
-/* barva žlutá = fce73e
-barva červená = e73d4a
-barva zelená = 067d85
-barva fialová = 81399f */
+/* barva žlutá = #fce73e
+barva červená = #e73d4a
+barva zelená = #067d85
+barva fialová = #81399f */
 
 body {
   margin: 0;
   padding: 0;
-}
-
-.main-page {
-  margin: 0 auto;
-  width: 750px;
-  height: 900px;
+  background-image: url(banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 p {
