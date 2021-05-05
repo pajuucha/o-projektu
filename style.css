@@ -24,4 +24,34 @@ p {
   font-family: 'Trebuchet MS', 'sans-serif';
   text-align: center;
   font-size: 1rem;
+  width: 100vmin;
+  margin: 150px auto;
+  color: #fce73e;
+  backdrop-filter: blur(50px);
+  border-radius: 15px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  width: 3rem;
+  height: 3rem;
+  color: #fce73e;
+  text-decoration: none;
+  text-align: center;
+  background-color: #067d85;
+  border-radius: 50%;
+}
+
+.navigation__item {
+  align-items: center;
+  margin: 3px;
 }
