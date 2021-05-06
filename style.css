@@ -14,77 +14,123 @@ barva fialová = #81399f */
 
 body {
   padding: 0;
-  background-image: url(pozadi.jpg);
+  margin: 0;
+  font-family: sans-serif;
+  color: #fce73e;
+}
+
+.main-page {
+  background-image: url(img/pozadi.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-section {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.685);
-  border-radius: 51%;
-  margin-top: 10px;
-  margin-left: 60px;
-}
-
-h1 {
-  font-family: Kristi;
-  font-size: 3rem;
-  font-weight: lighter;
-  color: #fce73e;
-  margin-left: 110px;
-  margin-top: 60px;
-}
-
-p {
-  font-family: sans-serif;
-  text-align: center;
-  font-size: 1rem;
-  line-height: 1.8;
-  width: 60vmin;
-  height: 35vmin;
-  padding-top: 5px;
-  padding-left: 45px;
-  padding-right: 45px;
-  color: #fce73e;
+  min-height: 100vh;
 }
 
 .navigation {
   display: flex;
   justify-content: flex-end;
+  margin-right: 2rem;
 }
 
 .navigation a {
+  color: #fce73e;
   display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  font-size: 1rem;
-  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
   width: 5rem;
   height: 5rem;
-  color: #fce73e;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
   background-color: #067d85;
+  margin-top: 2rem;
+  margin-right: 1.5rem;
+  padding: 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.12rem;
   border-radius: 50%;
 }
 
-.navigation__item {
-  align-items: center;
-  margin-left: 3px;
+.navigation a:hover,
+.navigation a:focus {
+  color: #e73d4a;
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.685);
+  border-radius: 50%;
+  padding: 1rem 2rem;
+  margin: 5rem 2rem;
+  width: 28rem;
+  height: 28rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: Kristi;
+  font-size: 5rem;
+  font-weight: lighter;
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+}
+
+h1::first-letter {
+  font-size: 7rem;
+}
+
+p,
+h3,
+h4 {
+  line-height: 1.7rem;
 }
 
 .profile {
-  font-family: sans-serif;
-  text-align: center;
-  font-size: 1rem;
-  line-height: 1.8;
-  width: 60vmin;
-  height: 60vmin;
-  padding-top: 120px;
-  padding-left: 45px;
-  padding-right: 45px;
-  color: #fce73e;
+  background-color: #fce73e;
 }
+
+.profile__about {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.profile__heading {
+  font-family: Kristi;
+  font-size: 6rem;
+  font-weight: lighter;
+  text-align: center;
+  color: #e73d4a;
+}
+
+.profile__text {
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.8;
+  width: 70vw;
+  min-height: 70vh;
+  margin: 0 auto;
+  padding: 3rem 4rem;
+  background-color: #e73d4a;
+  border-radius: 5rem 0;
+}
+
+.icon-github {
+  margin: 0 42%;
+}
+
+/*stylování pro mobily */
+
+@media (max-width: 880px) {
+  .navigation {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+  }
+}
+/* @media (min-width: 601px) and (max-width: 750px) {
+  .main-page {
+    background-size: contain;
+    height: 80vh;
+  }
+} */
